@@ -7,22 +7,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <script src="js/scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
 </head>
 <body>
+  <div class="header">
+    <h1>Haye Taproom</h1>
+  </div>
 <div class="container">
-  <h1>BEER!</h1>
-  <h3>Drink Selected: </h3> <input type="text" value="" id=drinkselected>
-  <br>
-  <h3>Size: </h3><input type="text" id="size" value=0>
-  <br>
-  <h3>Price: </h3><input type="text" value=0 id="price">
 
-  <h2>Drink:</h2>
-  <button type="button" value="Lager" id="Lager_button"onclick="drinkselected.value='Lager';
+  <button type="button" class="drink_button" value="Lager" id="Lager_button"onclick="drinkselected.value='Lager';
   Drink = 'Lager';">Lager</button>
-  <button type="button" value="Pale Ale" onclick="drinkselected.value='Pale Ale';" >Pale Ale</button>
-  <button type="button" value="IPA" onclick="drinkselected.value='IPA' Drink='IPA'">IPA</button>
-  <button type="button" value="Stout" onclick="drinkselected.value='Stout' Drink=Stout">Stout</button>
+  <button type="button" class="drink_button" value="Pale Ale" onclick="drinkselected.value='Pale Ale';" >Pale Ale</button>
+  <button type="button" class="drink_button" value="IPA" onclick="drinkselected.value='IPA' Drink='IPA'">IPA</button>
+  <button type="button" class="drink_button" value="Stout" onclick="drinkselected.value='Stout' Drink=Stout">Stout</button>
   <h2>Size:</h2>
 
   <button type="button" value=8 onclick="size.value=8 ; Size = 8">8oz</button>
@@ -36,10 +33,13 @@
   <button type="button" value=3 onclick="Quantity = 3">3</button>
   <button type="button" value=4 onclick="Quantity = 4">4</button>
 
-  <br>
 
+  <h3>Drink Selected</h3> <input type="text" value="" id=drinkselected>
 
-  <br>
+  <h3>Size</h3><input type="text" id="size" value=0>
+
+  <h3>Price</h3><input type="text" value=0 id="price">
+  
   <h2>Sell:</h2>
   <button type="button">Clear</button>
   <button type="button" onclick="inventory['Lager']= inventory['Lager'] - (size.value * Quantity); price.value = price_calc(size.value, Quantity); document.getElementById('Lager_button').innerHTML='There are ' +inventory['Lager'] +'oz of Lager left in the keg'">Price</button>

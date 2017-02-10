@@ -1,31 +1,47 @@
 body {
-  font-family:'arial';
-  color:orange;
+  margin:0;
+  box-sizing: border-box;
   background-color:black;
-}
-h3 {
-  display:inline;
-  font-size:15px;
-}
-input {
-  height:40px;
-  border-radius: 5px;
-  font-size:20px;
-}
-button {
-  height:100px;
-  width:50%;
-  margin:10px;
-  background-color: gray;
-  /*display:inline-block;*/
-  color:white;
-  font-size:30px;
-  border-radius: 10px;
+  color: #f09000;
+  font-family:'open sans';
 }
 .container {
-  margin: 0 auto;
-  width: 800px;
-  background-color:black;
-  padding:60px;
-  border-radius: 5px;
+  margin:0;
+  width:50%;
+  border-right: 2px solid #f09000;
 }
+.header {
+  /*border: 1px solid red;*/
+  background-color:black;
+  color:#f09000;
+  text-transform: uppercase;
+  border-bottom: 5px solid #f09000;
+}
+h1 {
+  font-family:'open sans';
+  font-weight:800;
+  padding:50px 5px 10px 5px;
+  text-align: center;
+  font-size:60px;
+}
+.drink_button {
+  background-color:black;
+  display:block;
+  width:100%;
+  height:75px;
+  color:#f09000;
+  text-align:left;
+  font-size: 30px;
+  font-weight:700;
+  border:none;
+  border: 2px solid #f09000;
+  border-right:none;
+}
+.drink_button:first-child {
+  border-top:none;
+}
+.drink_button:nth-child(odd) {
+  background-color:#2d2d2d;
+}
+
+ul>li*5
