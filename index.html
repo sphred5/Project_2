@@ -39,12 +39,12 @@
   <h3>Size</h3><input type="text" id="size" value=0>
 
   <h3>Price</h3><input type="text" value=0 id="price">
-  
+
   <h2>Sell:</h2>
   <button type="button">Clear</button>
   <button type="button" onclick="inventory['Lager']= inventory['Lager'] - (size.value * Quantity); price.value = price_calc(size.value, Quantity); document.getElementById('Lager_button').innerHTML='There are ' +inventory['Lager'] +'oz of Lager left in the keg'">Price</button>
 </div>
-<div id="test">
+<div id="ledger">
 
 </div>
 </body>
