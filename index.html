@@ -18,20 +18,20 @@
   <button type="button" class="drink_button" value="Lager" id="Lager_button"onclick="drinkselected.value='Lager';
   Drink = 'Lager';">Lager</button>
   <button type="button" class="drink_button" value="Pale Ale" onclick="drinkselected.value='Pale Ale';" >Pale Ale</button>
-  <button type="button" class="drink_button" value="IPA" onclick="drinkselected.value='IPA' Drink='IPA'">IPA</button>
-  <button type="button" class="drink_button" value="Stout" onclick="drinkselected.value='Stout' Drink=Stout">Stout</button>
+  <button type="button" class="drink_button" value="IPA" onclick="drinkselected.value='IPA'">IPA</button>
+  <button type="button" class="drink_button" value="Stout" onclick="drinkselected.value='Stout'">Stout</button>
   <h2>Size:</h2>
 
-  <button type="button" value=8 onclick="size.value=8 ; Size = 8">8oz</button>
-  <button type="button" value=12 onclick="size.value=12; Size = 12">12oz</button>
-  <button type="button" value=16 onclick="size.value=16; Size =16">16oz</button>
-  <button type="button" value=20 onclick="size.value=20; Size = 20">20oz</button>
+  <button type="button" class="size_button"  value=8 onclick="size.value=8 ; Size = 8">8oz</button>
+  <button type="button" class="size_button" value=12 onclick="size.value=12; Size = 12">12oz</button>
+  <button type="button" class="size_button" value=16 onclick="size.value=16; Size =16">16oz</button>
+  <button type="button" class="size_button" value=20 onclick="size.value=20; Size = 20">20oz</button>
 
   <h2>Quantity:</h2>
-  <button type="button" value=1 onclick="Quantity = 1">1</button>
-  <button type="button" value=2 onclick="Quantity = 2">2</button>
-  <button type="button" value=3 onclick="Quantity = 3">3</button>
-  <button type="button" value=4 onclick="Quantity = 4">4</button>
+  <button type="button" class="size_button" value=1 onclick="Quantity = 1">1</button>
+  <button type="button" class="size_button" value=2 onclick="Quantity = 2">2</button>
+  <button type="button" class="size_button" value=3 onclick="Quantity = 3">3</button>
+  <button type="button" class="size_button" value=4 onclick="Quantity = 4">4</button>
 
 
   <h3>Drink Selected</h3> <input type="text" value="" id=drinkselected>
@@ -41,11 +41,8 @@
   <h3>Price</h3><input type="text" value=0 id="price">
 
   <h2>Sell:</h2>
-  <button type="button">Clear</button>
-  <button type="button" onclick="inventory['Lager']= inventory['Lager'] - (size.value * Quantity); price.value = price_calc(size.value, Quantity); document.getElementById('Lager_button').innerHTML='There are ' +inventory['Lager'] +'oz of Lager left in the keg'">Price</button>
-</div>
-<div id="ledger">
-
+  <button type="button" class="size_button" onclick="price.value=0; drinkselected.value='';size.value=0">Clear</button>
+  <button type="button" class="size_button" onclick=" price.value = price_calc(size.value, Quantity)">Price</button>
 </div>
 </body>
 </html>
