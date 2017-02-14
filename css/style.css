@@ -56,3 +56,11 @@ input {
   height:30px;
   border-radius: 5px;
 }
+
+input#price {
+  background-color: transparent;
+  font-size: 3em;
+  color: white;
+  border: none;
+  height: auto;
+}

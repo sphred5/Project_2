@@ -38,11 +38,11 @@
 
   <h3>Size</h3><input type="text" id="size" value=0>
 
-  <h3>Price</h3><input type="text" value=0 id="price">
-
   <h2>Sell:</h2>
   <button type="button" class="size_button" onclick="price.value=0; drinkselected.value='';size.value=0">Clear</button>
-  <button type="button" class="size_button" onclick=" price.value = price_calc(size.value, Quantity)">Price</button>
+  <button type="button" class="size_button" onclick=" price.value = '$' + price_calc(size.value, Quantity)">Price</button>
+
+   <h3>Price</h3><input type="text" value=$00.00 id="price" readonly>
 </div>
 </body>
 </html>

@@ -14,7 +14,9 @@ function price_calc(Size, Quantity) {
     price = 4;
   }
   var totalPrice = (price * Quantity) + price * tax;
-  return totalPrice;
+  
+  // toFixed(number) : returns the interger with (number) decimal places.
+  return totalPrice.toFixed(2);
 }
 var inventory = {
   "Lager" : 640,
